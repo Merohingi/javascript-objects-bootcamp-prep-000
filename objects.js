@@ -2,8 +2,8 @@ var playlist = {
   Sam: 'Lay Me Down',
 }
 
-function updatePLaylist(playlist, artistName, songTitle) {
-  var newObj = Playlist.assign({[artistName]: songTitle}, playlist);
+function updateObjectWithKeyAndValue(obj, key, value) {
+  var newObj = Object.assign({[key]: value}, obj);
   return newObj;
 }
 
